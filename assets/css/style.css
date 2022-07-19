@@ -1,0 +1,38 @@
+.pstula{
+	display:none;
+}
+
+.pstula.show{
+	display:block;
+}
+
+.pstula__wrap-content{
+	position:fixed;
+	top:50%;
+	left:50%;
+	-moz-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	background:#fff;
+	z-index:444;
+	width:100%;
+	max-width:470px;
+	padding:40px 60px;
+	-webkit-box-shadow:0 0 5px rgb(0 0 0 / 10%);
+	box-shadow:0 0 5px rgb(0 0 0 / 10%);
+}
+
+.pstula__shadow{
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	z-index:2003;
+	background-color:rgba(0,0,0,.24);
+	-webkit-backdrop-filter:blur(6px);
+	backdrop-filter:blur(6px);
+	z-index:333;
+}
