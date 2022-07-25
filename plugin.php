@@ -1,13 +1,19 @@
 <?php
 /*
  * Plugin Name: Polylang Switch To Ukrainian language
- * Description: Ukrainian language selection popup
+ * Plugin URI: https://github.com/svoyMan/PHP_WP_Polylang_Plugin_SwitchToUkrainianlanguage
+ * Description: Displays a popup with languages. For Ukraine, so that the Ukrainian version opens first by default
+ * Version: 0.1
+ * Requires at least: 6.0
+ * Requires PHP: 7.4
  * Author: My Master
  * Author URI: http://my-master.net.ua/
- * Version: 0.2
+ * License: GPL-2.0-or-later
+ * License URI: https://www.gnu.org/licenses/gpl-2.0.html
+ * Text Domain: pstula_domain
  */
 
-define( 'SWITCH_TO_UKRAINIAN_LANGUAGE_VERSION', '0.2' );
+define( 'SWITCH_TO_UKRAINIAN_LANGUAGE_VERSION', '0.1' );
 define( 'ROOT_DIR', __DIR__ );
 define( 'ROOT_URL', plugin_dir_url( __FILE__ ) );
 define( 'UKRAINE_CODE', 'uk' );

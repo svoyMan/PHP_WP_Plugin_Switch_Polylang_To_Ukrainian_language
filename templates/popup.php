@@ -1,10 +1,3 @@
-<?php
-// $show = false;
-// if ( UKRAINE_CODE != get_locale() ) {
-// 	$show = true;
-// }
-?>
-
 <div class="pstula">
 	<div class="pstula__wrap-content">
 		<div class="pstula__content">
