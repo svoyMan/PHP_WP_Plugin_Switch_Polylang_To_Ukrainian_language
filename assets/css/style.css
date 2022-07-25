@@ -36,3 +36,27 @@
 	backdrop-filter:blur(6px);
 	z-index:333;
 }
+
+.pstula__content{
+	text-align:center;
+}
+
+.pstula__title{
+	margin-bottom:30px;
+	font-weight:bold;
+}
+
+.pstula__list{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+.pstula__list__item{
+	display:inline-block;
+	margin:0;
+}
+
+.pstula__list__item + .pstula__list__item{
+	margin-left:15px;
+}

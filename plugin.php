@@ -10,12 +10,16 @@
 define( 'SWITCH_TO_UKRAINIAN_LANGUAGE_VERSION', '0.2' );
 define( 'ROOT_DIR', __DIR__ );
 define( 'ROOT_URL', plugin_dir_url( __FILE__ ) );
+define( 'UKRAINE_CODE', 'uk' );
 
 if ( in_array( 'polylang/polylang.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
 	add_action( 'wp_enqueue_scripts', 'pstul_wp_enqueue_scripts' );
 	function pstul_wp_enqueue_scripts(){
 		wp_enqueue_style( 'pstul_style', plugin_dir_url( __FILE__ ) . '/assets/css/style.css', array(), SWITCH_TO_UKRAINIAN_LANGUAGE_VERSION );
 		wp_enqueue_script( 'pstul_app', plugin_dir_url( __FILE__ ) . '/assets/js/PSTULApp.js', array('jquery'), SWITCH_TO_UKRAINIAN_LANGUAGE_VERSION, true );
+		wp_localize_script( 'pstul_app', 'pstul_app', array(
+			'ukraine_code' => UKRAINE_CODE,
+		) );
 	}
 
 	add_action( 'wp_footer', 'pstul_wp_footer' );
