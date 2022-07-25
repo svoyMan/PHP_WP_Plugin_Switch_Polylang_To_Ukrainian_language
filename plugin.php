@@ -4,11 +4,11 @@
  * Plugin URI: https://github.com/svoyMan/PHP_WP_Polylang_Plugin_SwitchToUkrainianlanguage
  * Description: Displays a popup with languages. For Ukraine, so that the Ukrainian version opens first by default
  * Version: 0.1
- * Requires at least: 6.0
- * Requires PHP: 7.4
+ * Requires at least: 5.9
+ * Requires PHP: 7.0
  * Author: My Master
  * Author URI: http://my-master.net.ua/
- * License: GPL-2.0-or-later
+ * License: GPLv2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: pstula_domain
  */

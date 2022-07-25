@@ -1,1 +1,0 @@
-# PHP_WP_Polylang_Plugin_SwitchToUkrainianlanguage
