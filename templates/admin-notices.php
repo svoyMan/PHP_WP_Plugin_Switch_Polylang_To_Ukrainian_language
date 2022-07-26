@@ -1,3 +1,3 @@
-<div id="message" class="polylang-switch-to-ukrainian-language updated">
-	<p><strong><?php _e( 'The "Polylang Switch To Ukrainian language" requires "Popylang" Plugin installed and activated.', 'pstul_domain' ); ?></strong></p>
+<div id="message" class="switch-polylang-to-ukrainian-language updated">
+	<p><strong><?php _e( 'The "Switch Polylang To Ukrainian language" requires "Popylang" Plugin installed and activated.', 'pstula_domain' ); ?></strong></p>
 </div>

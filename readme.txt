@@ -2,7 +2,7 @@
 Author: My Master
 Author URI: http://my-master.net.ua/
 Contributors: My Master
-Tags: block, WordPress blocks, gutenberg, blocks
+Tags: polylang, multilingual, bilingual, translate, translation, language, multilanguage, international, localization
 Requires at least: 5.9
 Tested up to: 6.0
 Requires PHP: 7.0
@@ -18,12 +18,12 @@ This plug-in will display a popup with language selection in order for the page 
 
 == Installation ==
 
-1. Install the 'Polylang Switch To Ukrainian language' plugin either via the WordPress plugin directory or by uploading the files to your server at wp-content/plugins.
-2. Activate the 'Polylang Switch To Ukrainian language' WordPress plugin through the 'Plugins' menu in WordPress.
+1. Install the 'Switch Polylang To Ukrainian language' plugin either via the WordPress plugin directory or by uploading the files to your server at wp-content/plugins.
+2. Activate the 'Switch Polylang To Ukrainian language' WordPress plugin through the 'Plugins' menu in WordPress.
 
 == Frequently Asked Questions ==
 
-= What are the requirements to use the 'Polylang Switch To Ukrainian language' blocks plugin? =
+= What are the requirements to use the 'Switch Polylang To Ukrainian language' blocks plugin? =
 
 You need to have the latest version of WordPress and Plugin Polylang on your website, to begin with.
 

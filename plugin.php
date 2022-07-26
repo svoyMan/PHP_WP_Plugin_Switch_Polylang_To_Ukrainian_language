@@ -1,7 +1,7 @@
 <?php
 /*
- * Plugin Name: Polylang Switch To Ukrainian language
- * Plugin URI: https://github.com/svoyMan/PHP_WP_Polylang_Plugin_SwitchToUkrainianlanguage
+ * Plugin Name: Switch Polylang To Ukrainian language
+ * Plugin URI: git@github.com:svoyMan/PHP_WP_Plugin_Switch_Polylang_To_Ukrainian_language.git
  * Description: Displays a popup with languages. For Ukraine, so that the Ukrainian version opens first by default
  * Version: 0.1
  * Requires at least: 5.9
