@@ -1,24 +1,24 @@
-var PSTULApp = {
+var SPTULApp = {
 	init:function($){
 		var self = this;
-		var lang = this.getCookie( 'PSTULApp_lang' );
-		var lang_is_redirect = this.getCookie( 'PSTULApp_is_redirect' );
-		var current_lang = jQuery('.pstula__current_lang').data('current-lang');
-		var popup = jQuery('.pstula');
+		var lang = this.getCookie( 'SPTULApp_lang' );
+		var lang_is_redirect = this.getCookie( 'SPTULApp_is_redirect' );
+		var current_lang = jQuery('.sptul__current_lang').data('current-lang');
+		var popup = jQuery('.sptul');
 		var cookie_expires = 2;
 
-		if ( !lang && pstul_app.ukraine_code != current_lang ) {
+		if ( !lang && sptul_app.ukraine_code != current_lang ) {
 			popup.addClass('show');
-		}else if ( lang != current_lang && !lang_is_redirect && pstul_app.ukraine_code != current_lang ) {
-			self.setCookie('PSTULApp_is_redirect', true, cookie_expires);
-			redirect_url = jQuery('.pstula__list__item__link[data-lang-slug="' + lang + '"]').attr('href');
+		}else if ( lang != current_lang && !lang_is_redirect && sptul_app.ukraine_code != current_lang ) {
+			self.setCookie('SPTULApp_is_redirect', true, cookie_expires);
+			redirect_url = jQuery('.sptul__list__item__link[data-lang-slug="' + lang + '"]').attr('href');
 			window.location.href = redirect_url;
 		}
 
-		jQuery('.pstula__list__item a').on('click', function(){
+		jQuery('.sptul__list__item__link').on('click', function(){
 			var lang = jQuery(this).data('lang-slug');
-			self.setCookie('PSTULApp_lang', lang, cookie_expires);
-			self.setCookie('PSTULApp_is_redirect', true, cookie_expires);
+			self.setCookie('SPTULApp_lang', lang, cookie_expires);
+			self.setCookie('SPTULApp_is_redirect', true, cookie_expires);
 		});
 	},
 
@@ -45,5 +45,5 @@ var PSTULApp = {
 };
 
 jQuery(function(){
-	PSTULApp.init();
+	SPTULApp.init();
 });

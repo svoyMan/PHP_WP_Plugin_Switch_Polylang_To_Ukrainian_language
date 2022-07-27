@@ -1,12 +1,12 @@
-.pstula{
+.sptul{
 	display:none;
 }
 
-.pstula.show{
+.sptul.show{
 	display:block;
 }
 
-.pstula__wrap-content{
+.sptul__wrap-content{
 	position:fixed;
 	top:50%;
 	left:50%;
@@ -24,7 +24,7 @@
 	box-shadow:0 0 5px rgb(0 0 0 / 10%);
 }
 
-.pstula__shadow{
+.sptul__shadow{
 	position:fixed;
 	top:0;
 	left:0;
@@ -37,26 +37,26 @@
 	z-index:333;
 }
 
-.pstula__content{
+.sptul__content{
 	text-align:center;
 }
 
-.pstula__title{
+.sptul__title{
 	margin-bottom:30px;
 	font-weight:bold;
 }
 
-.pstula__list{
+.sptul__list{
 	margin:0;
 	padding:0;
 	list-style:none;
 }
 
-.pstula__list__item{
+.sptul__list__item{
 	display:inline-block;
 	margin:0;
 }
 
-.pstula__list__item + .pstula__list__item{
+.sptul__list__item + .sptul__list__item{
 	margin-left:15px;
 }

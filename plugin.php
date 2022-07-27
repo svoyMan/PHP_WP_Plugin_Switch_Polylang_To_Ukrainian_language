@@ -10,31 +10,37 @@
  * Author URI: http://my-master.net.ua/
  * License: GPLv2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain: pstula_domain
+ * Text Domain: sptul_domain
  */
 
-define( 'SWITCH_TO_UKRAINIAN_LANGUAGE_VERSION', '0.1' );
-define( 'ROOT_DIR', __DIR__ );
-define( 'ROOT_URL', plugin_dir_url( __FILE__ ) );
-define( 'UKRAINE_CODE', 'uk' );
+define( 'SPTUL_PLUGIN_VERSION', '0.1' );
+define( 'SPTUL_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
+define( 'SPTUL_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
+define( 'SPTUL_UKRAINE_CODE', 'uk' );
 
 if ( in_array( 'polylang/polylang.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
-	add_action( 'wp_enqueue_scripts', 'pstul_wp_enqueue_scripts' );
-	function pstul_wp_enqueue_scripts(){
-		wp_enqueue_style( 'pstul_style', plugin_dir_url( __FILE__ ) . '/assets/css/style.css', array(), SWITCH_TO_UKRAINIAN_LANGUAGE_VERSION );
-		wp_enqueue_script( 'pstul_app', plugin_dir_url( __FILE__ ) . '/assets/js/PSTULApp.js', array('jquery'), SWITCH_TO_UKRAINIAN_LANGUAGE_VERSION, true );
-		wp_localize_script( 'pstul_app', 'pstul_app', array(
-			'ukraine_code' => UKRAINE_CODE,
-		) );
+	if ( ! function_exists( 'sptul_wp_enqueue_scripts' ) ) {
+		add_action( 'wp_enqueue_scripts', 'sptul_wp_enqueue_scripts' );
+		function sptul_wp_enqueue_scripts(){
+			wp_enqueue_style( 'sptul_style', SPTUL_PLUGIN_URL . 'assets/css/style.css', array(), SPTUL_PLUGIN_VERSION );
+			wp_enqueue_script( 'sptul_app', SPTUL_PLUGIN_URL . 'assets/js/SPTULApp.js', array('jquery'), SPTUL_PLUGIN_VERSION, true );
+			wp_localize_script( 'sptul_app', 'sptul_app', array(
+				'ukraine_code' => SPTUL_UKRAINE_CODE,
+			) );
+		}
 	}
 
-	add_action( 'wp_footer', 'pstul_wp_footer' );
-	function pstul_wp_footer(){
-		include ROOT_DIR . '/templates/popup.php';
+	if ( ! function_exists( 'sptul_wp_footer' ) ) {
+		add_action( 'wp_footer', 'sptul_wp_footer' );
+		function sptul_wp_footer(){
+			include SPTUL_PLUGIN_DIR . 'templates/popup.php';
+		}
 	}
 } else {
-	add_action( 'admin_notices', 'pstul_admin_notices' );
-	function pstul_admin_notices() {
-		include ROOT_DIR . '/templates/admin-notices.php';
+	if ( ! function_exists( 'sptul_admin_notices' ) ) {
+		add_action( 'admin_notices', 'sptul_admin_notices' );
+		function sptul_admin_notices() {
+			include SPTUL_PLUGIN_DIR . 'templates/admin-notices.php';
+		}
 	}
 }
